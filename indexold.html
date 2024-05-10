@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <title>Fadhil Riyanto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+    <script src="custom.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-2 pb-5 pt-4 fd_bg_color fixed-top">
+        <ul class="nav">
+            <li class="nav-item">
+                <button class="px-2 px-lg-4 nav-link text-white fd_link_hoverable" id="home-page" onclick="change_page('#main-page')" aria-current="page">Home</button>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="px-2 px-lg-4 nav-link text-white fd_link_hoverable" data-bs-toggle="dropdown" aria-current="page">Projects</a>
+                <div class="dropdown">
+                    <!-- <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sosial media
+                    </button> -->
+                    <ul class="fd_bg_color dropdown-menu ">
+                    <li><a class="dropdown-item fd_font_color_secondary" href="#">API</a></li>
+                    <li><a class="dropdown-item fd_font_color_secondary" href="#">Coding Projects</a></li>
+                    <li><a class="dropdown-item fd_font_color_secondary" href="#">Publications</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="px-2 px-lg-4 nav-link text-white fd_link_hoverable" aria-current="page">Blog</a>
+            </li>
+            
+        </ul>
+    </header>
+    <div class="container-fluid fd_bg_color min-vh-100 pt-lg-5">
+        <div class="container mt-5" id="main-page">
+                <div class="row">
+                    <div class="col-lg-7 flex-grow-1 order-2 order-lg-1">
+                        <h5 class="fd_font_color text-decoration-none">Perkenalkan, saya</h5>
+                        <h2 class="fd_font_color fw-bold display-3"><a class="fa_dotted_border fd_font_color_up text-decoration-none">FA</a>dhil Riyanto <a class="fa_dotted_border fd_font_color_up text-decoration-none">DEV</a></h2>
+                        <h3 class="fd_font_color_secondary mb-3">ku seorang <a id="typing-animate"></a></h3> 
+                        <!-- <h3 class="fd_font_color_secondary mb-3">Backend programmer | HPC computing | GNU/Linux users | Freelance</h3> -->
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-outline-warning me-3" onclick="change_page('#resume-page')">Resume</button>
+                            <button type="button" class="btn btn-outline-info me-3" onclick="change_page('#kontak-page')">Kontak</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 flex-grow-1 order-1 order-lg-2">
+                        <div class="text-center mb-5">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F65%2F1e%2Fe2%2F651ee28aabacd9dd2f2f021197e67f85.jpg&f=1&nofb=1&ipt=ec8d380c18a3001c10c93d0601ab3a430169d953718e167d5dd847383add9e8c&ipo=images" alt="" srcset="" width="300px">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- // resume page -->
+        <div class="container" id="resume-page">
+            <div class="d-flex p-3 m-1 rounded bg-primary text-white">
+                <div class="me-auto">
+                    Download resume
+                </div>
+                <div class="p-1 bg-white text-primary rounded">
+                    <a href="#" class="text-decoration-none">Download</a>
+                </div>
+            </div>
+            <div class="p-3 m-1 bg-primary text-white rounded">
+                <div class="p-1 m-2">
+                    <b>SMK Pelita nusantara 1</b>
+                    <p>Vocational High School | 2021 - 2024</p>
+                </div>
+
+                <div class="p-1 m-2">
+                    <b>Dian Nuswantoro University</b>
+                    <p>Vocational High School | 2024 - present</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-info mt-3" onclick="change_page('#main-page')">back</button>
+        </div>
+
+        <!-- // kontak page -->
+        <div class="container" id="kontak-page">
+            <div class="p-3 m-1 bg-primary text-white rounded">
+                <div class="p-1 m-2">
+                    <b>Email : </b>
+                    <a href="mailto:me@fadev.org" class="text-decoration-none text-white">me@fadev.org</a>
+                </div>
+
+                <div class="p-1 m-2">
+                    <b>github : </b>
+                    <a href="https://github.com/fadhil-riyanto" class="text-decoration-none text-white">https://github.com/fadhil-riyanto</a>
+                </div>
+
+                <div class="p-1 m-2">
+                    <b>gpg : </b>
+                    <a class="text-white">gpg --recv-keys 4F722ECAC601B00A</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-info mt-3" onclick="change_page('#main-page')">back</button>
+        </div>
+    </div>
+    ssssssssss
+s
+    <script>
+        typing_now()
+        change_page("#main-page")
+    </script>
+</body>
