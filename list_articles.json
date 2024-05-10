@@ -1,0 +1,14 @@
+[
+    {
+        "title":"hello world",
+        "desc":"test skrip hasil colab mdjs",
+        "date":"2024-05-10",
+        "file": "hello_world"
+    },
+    {
+        "title":"Teknologi di website ini",
+        "desc":"pen tau website ini pakai teknologi apa?",
+        "date":"2024-05-10",
+        "file": "mytech"
+    }
+]
